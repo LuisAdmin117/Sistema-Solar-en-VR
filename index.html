@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <script src="js/aframe.min.js"></script>
+        <script src="js/aframe-event-set-component.min.js"></script>
+    </head>
+    <body>
+        <script>
+            
+        </script>
+        <a-scene>
+            
+         <a-sphere position="0.429 1.250 -8.944" radius="1.25"  
+         src="fondo/2k_earth_daymap.jpg"
+         event-set__enter="_event: mouseenter; _target: #Tierra; visible: true" 
+         event-set__leave="_event: mouseleave; _target: #Tierra; visible: false"
+         animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+     </a-sphere>
+     <a-text id="Tierra" value="Tierra" align="center" color="#FFF" 
+         visible="false" position="0.429 3 -8.944" scale="1.106 1 1"
+         geometry="primitive: plane; width: 2.10; height:0.50" 
+         material="color: #333">
+     </a-text>
+
+            <a-sphere position="5.914 1.250 -6.474" radius="1.25" color="#EF2D5E" src="fondo/2k_mars.jpg"
+            event-set__enter="_event: mouseenter; _target: #Marte; visible: true" 
+            event-set__leave="_event: mouseleave; _target: #Marte; visible: false"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+            </a-sphere>
+            <a-text id="Marte" value="Marte" align="center" color="#FFF" 
+               visible="false" position="5.914 3 -6.474" rotation="0 -50.000 0" scale="1.106 1 1" 
+               geometry="primitive: plane; width: 2.10; height:0.50" 
+               material="color: #333"></a-text>
+
+            <a-sphere position="7.654 1.250 -1.162" radius="1.25" src="fondo/2k_jupiter.jpg"
+
+            event-set__enter="_event: mouseenter; _target: #Jupiter; visible: true" 
+            event-set__leave="_event: mouseleave; _target: #Jupiter; visible: false"
+            
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+
+            </a-sphere>
+
+            <a-text id="Jupiter" value="Jupiter" align="center" color="#FFF" 
+               visible="false" position="7.654 3 -1.162" rotation="0 -90.000 0" scale="1.106 1 1" 
+               geometry="primitive: plane; width: 2.10; height:0.50" 
+               material="color: #333"></a-text>
+
+            <a-sphere position="6.234 1.250 4.633" radius="1.25" src="fondo/2k_saturn.jpg"
+
+            event-set__enter="_event: mouseenter; _target: #Saturno; visible: true" 
+            event-set__leave="_event: mouseleave; _target: #Saturno; visible: false"
+            
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+
+            </a-sphere>
+
+            <a-text id="Saturno" value="Saturno" align="center" color="#FFF"
+               visible="false" position="6.234 3 4.633" rotation="0 -130.000 0" scale="1.106 1 1" 
+               geometry="primitive: plane; width: 2.10; height:0.50" 
+               material="color: #333"></a-text>
+
+               <a-entity position="6.222 1.278 4.621" rotation="90 0 0">
+                  <a-ring id="saturn-ring"
+                      material="side: double" 
+                      scale="2.381 2.340 1.000" 
+                      src="fondo/2k_saturn_ring_alpha.png"
+                      animation="property: rotation; to: 0 0 360; loop: true; dur: 50000">
+                  </a-ring>
+              </a-entity>
+
+            <a-sphere position="0.477 1.250 7.376" radius="1.25" src="fondo/2k_uranus.jpg"
+            
+            event-set__enter="_event: mouseenter; _target: #Urano; visible: true" 
+            event-set__leave="_event: mouseleave; _target: #Urano; visible: false"
+            
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+
+            </a-sphere>
+
+            <a-text id="Urano" value="Urano" align="center" color="#FFF" 
+               visible="false" position="0.477 3 7.376" rotation="0 -180.000 0" scale="1.106 1 1" 
+               geometry="primitive: plane; width: 2.10; height:0.50" 
+               material="color: #333"></a-text>
+
+            <a-sphere position="-5.133 1.250 4.565" radius="1.25" src="fondo/2k_neptune.jpg"
+            
+            event-set__enter="_event: mouseenter; _target: #Neptuno; visible: true" 
+            event-set__leave="_event: mouseleave; _target: #Neptuno; visible: false"
+            
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+
+            </a-sphere>
+
+            <a-text id="Neptuno" value="Neptuno" align="center" color="#FFF"
+               visible="false" position="-5.133 3 4.565" rotation="0 -220.000 0" scale="1.106 1 1" 
+               geometry="primitive: plane; width: 2.10; height:0.50" 
+               material="color: #333"></a-text>
+
+            <a-sphere position="-6.980 1.250 -1.171" radius="1.25" src="fondo/2k_mercury.jpg" 
+            
+            event-set__enter="_event: mouseenter; _target: #Mercurio; visible: true" 
+            event-set__leave="_event: mouseleave; _target: #Mercurio; visible: false"
+            
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+
+            </a-sphere>
+
+            <a-text id="Mercurio" value="Mercurio" align="center" color="#FFF" 
+               visible="false" position="-6.980 3 -1.171" rotation="0 90.000 0" scale="1.106 1 1" 
+               geometry="primitive: plane; width: 2.10; height:0.50" 
+               material="color: #333"></a-text>
+
+            <a-sphere position="-4.813 1.250 -6.444" radius="1.25" src="fondo/2k_venus_surface.jpg" 
+            
+            event-set__enter="_event: mouseenter; _target: #Venus; visible: true" 
+            event-set__leave="_event: mouseleave; _target: #Venus; visible: false"
+            
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000">
+
+            </a-sphere>
+
+            <a-text id="Venus" value="Venus" align="center" color="#FFF"
+               visible="false" position="-4.813 3 -6.444" rotation="0 50.000 0" scale="1.106 1 1" 
+               geometry="primitive: plane; width: 2.10; height:0.50" 
+               material="color: #333"></a-text>
+            
+            
+            <a-sky position="0.507 0.000 -1.526" color="#ECECEC" src="fondo/2k_stars_milky_way.jpg"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 50000"></a-sky>
+
+            <a-camera position="0.607 1.600 -0.929">
+                <a-cursor></a-cursor>
+            </a-camera>
+        </a-scene>
+    </body>
+</html>
